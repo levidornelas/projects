@@ -20,17 +20,17 @@ def compra():
             continue
             
         
-        if pagamento == 1:
+        elif pagamento == 1:
                 print(f'O preço do produto à vista com 10% de desconto é: R${preco - preco * (10/100):.2f}')
 
-        if pagamento == 2:
+        elif pagamento == 2:
                 print(f'O preço do produto à vista com 5% de desconto é: R${preco - preco * (5/100):.2f}')
 
-        if pagamento == 3:
+        elif pagamento == 3:
                 print(f'O preço do produto no cartão não recebe desconto, então será R${preco:.2f}')
                 print(f'Sua compra será parcelada em 2x de R${preco / 2:.2f}')
 
-        if pagamento == 4:
+        elif pagamento == 4:
                 total = preco + preco * (20/100)
                 print(f'Em 3x ou mais no cartão, o produto receberá 20% de juros. Logo, será {total:.2f}')
                 totalparc = int(input('Em quantas vezes pretende parcelar? ' ))
