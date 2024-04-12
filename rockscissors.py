@@ -2,14 +2,14 @@ import random
 
 def pedrapapel():
     print('Bem vindo ao pedra, papel e tesoura!')
-    opcoes = ['pedra','papel','tesoura','sair']
-    
+    opcoesjogador = ['pedra','papel','tesoura','sair']
+    maquina = ['pedra','papel','tesoura']
     
     while True:
 
         jogadaplayer = input('Escolha pedra, papel, tesoura, ou sair: ')
         
-        if jogadaplayer not in opcoes:
+        if jogadaplayer not in opcoesjogador:
             print('Por favor insira uma opção válida. ')
             continue
 
@@ -18,7 +18,7 @@ def pedrapapel():
             break
         
         #Escolha do computador:
-        jogadapc = random.choice(opcoes)
+        jogadapc = random.choice(maquina)
 
         #Escolhas do jogador:
         if jogadaplayer == jogadapc:
