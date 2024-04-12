@@ -18,8 +18,7 @@ def compra():
         if pagamento not in formas:
             print('Por favor, insira uma forma válida de pagamento.')
             continue
-            
-        
+                  
         elif pagamento == 1:
                 print(f'O preço do produto à vista com 10% de desconto é: R${preco - preco * (10/100):.2f}')
 
